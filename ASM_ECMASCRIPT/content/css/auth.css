@@ -1,0 +1,156 @@
+.article_auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    margin-top: 66px;
+}
+
+
+.article_form {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    /* margin-top: 100px; */
+}
+
+.main_form_user {
+    display: flex;
+    min-width: 850px;
+    min-height: 400px;
+    padding: 10px 0px;
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px rgba(51, 51, 51, 0.05), 0 30px 20px -20px rgba(51, 51, 51, 0.25), 0 4px 20px 0 rgba(51, 51, 51, 0.2);
+}
+
+/* content_login_left */
+.main_form_user .content_login_left {
+    width: 40%;
+    border-right: 1px solid #e5e5e5;
+}
+
+.content_login_left .content_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.content_login h2 {
+    font-size: 1.3rem;
+    color: #294150;
+}
+
+.content_login p {
+    width: 70%;
+    font-size: 0.9rem;
+    color: tomato;
+}
+
+/*  content_login_right*/
+.main_form_user .content_login_right {
+    width: 60%;
+}
+
+.content_login_right .content_tieuDe_login {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content_tieuDe_login h2 {
+    margin-bottom: 10px;
+}
+
+.content_tieuDe_login p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* form */
+.form_user {
+    width: 65%;
+    /* width: 76%; */
+    margin: auto;
+}
+
+.form_user .form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form_group label {
+    margin-bottom: 10px;
+    color: #9F9F9F;
+    font-size: 0.8rem;
+}
+
+.form_group input {
+    height: 25px;
+    padding: 5px 10px;
+    /* font-size: 0.9rem; */
+}
+
+.inp_form {
+    background-color: tomato;
+    color: white;
+    border: 0;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+}
+
+.wrap p {
+    font-size: 0.8rem;
+    color: tomato;
+    text-align: center;
+}
+
+.wrap p a {
+    color: tomato;
+}
+
+
+/*  */
+.flexRegsiter {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_userflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form_userRegsiter {
+    width: 76%;
+}
+
+input[type="file"] {
+    /* display: none; */
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    /* width: 188px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0px; */
+}
+
+#labelAvatar {
+    margin-bottom: 0px;
+    border: 1px solid #9F9F9F;
+    padding: 4px;
+    border-radius: 1px;
+}
+

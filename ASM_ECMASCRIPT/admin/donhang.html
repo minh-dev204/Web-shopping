@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/content/css_admin/danhmuc.css">
+    <link rel="stylesheet" href="/content/css_admin/sanpham.css">
+    <link rel="stylesheet" href="/content/css_admin/donhang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <article>
+        <div class="box_left">
+            <div class="box_left_h1">
+                <h1>Admin</h1>
+            </div>
+            <ul class="ul_left">
+                <div class="div_li" id="li1">
+                    <li class="li_left"><a href="danhmuc.html">DANH MỤC</a></li>
+                </div>
+                <div class="div_li">
+                    <li class="li_left"><a href="sanpham.html">SẢN PHẨM</a></li>
+                </div>
+                <div class="div_li">
+                    <li class="li_left"><a href="donhang.html">Đơn Hàng</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="setting" onclick="outAdmin()">
+            <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+        </div>
+    </article>
+    <!-- aside -->
+    <aside>
+       
+        <div class="logo">
+            <ul class="ul_logo">
+                <!-- <li class="i"><i class="fa-solid fa-bag-shopping fa-2xl"></i></li> -->
+                <li class="li_logo_first"><img class="li_imgLogo" width="32px" src="../content/img/logo2.png" alt="">
+                </li>
+                <li class="name_logo">Minh Shop</li>
+            </ul>
+        </div>
+
+        <div class="tieuDe">
+            <h1>Đơn hàng</h1>
+        </div>
+
+        <div class="table_sp">
+            <div class="thead_sp">
+                <div class="tr">
+                    <div class="th" style="width: 150px;">Mã đơn hàng</div>
+                    <div class="th" style="width: 300px;">Mã khách hàng</div>
+                    <div class="th" style="width: 250px;">Tên Sản Phẩm</div>
+                    <div class="th" style="width: 100px;">Ngày đặt hàng</div>
+                    <div class="th" style="width: 300px;">Thao tác</div>
+                </div>
+            </div>
+        
+            <div id="tbody_sp1" class="tbody_sp1 tbody_donhang">
+                <!-- <div class="tr_sp tr_donhang">
+                    <div class="td" style="width: 150px;">1</div>
+                    <div class="td" style="width: 300px;">Bùi Văn Minh</div>
+                    <div class="td" style="width: 250px;">mbui683@gmail.com</div>
+                    <div class="td" style="width: 100px;">28-11-2004</div>
+                    <div class="td" style="width: 300px;">
+                        <button class="bnt_list1">Chi tiết</button>
+                        <button class="bnt_list1 bnt_delOder">Xóa</button>
+                    </div>
+                </div> -->
+        
+            </div>
+        </div>
+     
+    </aside>
+
+    <!-- js -->
+    <!-- <script src="../content/js/danhmuc.js"></script> -->
+    <script src="../content/js/sanpham.js"></script>
+    <script src="../content/js/danhmuc.js"></script>
+    <script src="../content/js/API_billAmin.js"></script>
+</body>
+
+</html>

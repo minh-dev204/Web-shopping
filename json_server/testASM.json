@@ -1,0 +1,72 @@
+{
+  "danhMuc": [
+    {
+      "id": 1,
+      "name": "Áo Thun"
+    },
+    {
+      "id": 2,
+      "name": "Áo Sơ Mi"
+    }
+  ],
+  "sanPham": [
+    {
+      "namesp": "Quần Thun Nam2",
+      "price": "2002",
+      "fkiddm": "2",
+      "id": 2
+    },
+    {
+      "namesp": "Quần Thun Nam2",
+      "price": "2002",
+      "fkiddm": "2",
+      "id": 3
+    },
+    {
+      "namesp": "Áo Sơ Mi Nam",
+      "price": "100",
+      "fkiddm": "1",
+      "id": 4
+    },
+    {
+      "namesp": "áo thun tay lỡ",
+      "price": "1001",
+      "fkiddm": "1",
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_name": "Nguyễn Hoàng Phương Anh (Na Na)",
+      "customer_address": "60/75 Mẹ Nhu",
+      "customer_email": "Không",
+      "customer_phone_number": "0945109129",
+      "created_date": "21-1-2024",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "customer_name": "Lê Hữu Minh Hưng (Ken)",
+      "customer_address": "433 Kinh Dương Vương",
+      "customer_email": "Không",
+      "customer_phone_number": "0945109129",
+      "created_date": "21-1-2024",
+      "status": 1
+    }
+  ],
+  "order_details": [
+    {
+      "order_id": "1",
+      "product_id": "1",
+      "quantity": "1",
+      "unit_price": 2000
+    },
+    {
+      "order_id": "2",
+      "product_id": "1",
+      "quantity": "1",
+      "unit_price": 1000
+    }
+  ]
+}

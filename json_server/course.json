@@ -1,0 +1,24 @@
+{
+  "courses": [
+    {
+      "id": 2,
+      "name": "PHP",
+      "content": "Lập trình cơ sở với PHP tại F8"
+    },
+    {
+      "name": "HTML & CSS",
+      "content": "Lập trình cơ sở với HTML & CSS tại F8",
+      "id": 3
+    },
+    {
+      "name": "JavaScript",
+      "content": "Lập trình cơ sở với JavaScript tại F8",
+      "id": 4
+    },
+    {
+      "name": "Java",
+      "content": "Lập trình cơ sở với Java",
+      "id": 5
+    }
+  ]
+}

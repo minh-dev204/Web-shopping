@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/content/css_admin/danhmuc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <article>
+        <div class="box_left">
+            <div class="box_left_h1">
+                <h1>Admin</h1>
+            </div>
+            <ul class="ul_left">
+                <div class="div_li" id="li1">
+                    <li class="li_left"><a href="danhmuc.html">DANH MỤC</a></li>
+                </div>
+                <div class="div_li">
+                    <li class="li_left"><a href="sanpham.html">SẢN PHẨM</a></li>
+                </div>
+                <div class="div_li">
+                    <li class="li_left"><a href="donhang.html">Đơn Hàng</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="setting" onclick="outAdmin()">
+            <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+        </div>
+
+    </article>
+    <!-- aside -->
+    <aside>
+        <!--  form create  -->
+        <div class="form_create">
+           
+            <div class="form_group ">
+                <label class="group_label" for="">Tên Loại :</label>
+                <input class="group_inp" type="text" name="form-tenloai">
+            </div>
+
+            <button id="bnt-create" class="submit create create_danhmuc">Create</button>
+        </div>
+        <!-- end form create -->
+
+        <!--  form update  -->
+        <div class="form_update">
+           
+            <div class="form_group ">
+                <label class="group_label" for="">Tên Loại :</label>
+                <input class="group_inp" name="form-tenloai-update" type="text">
+            </div>
+
+            <button class="submit update" id="bnt-update">Update</button>
+        </div>
+        <!-- end form update -->
+
+        <div class="logo">
+            <ul class="ul_logo">
+                <!-- <li class="i"><i class="fa-solid fa-bag-shopping fa-2xl"></i></li> -->
+                <li class="li_logo_first"><img class="li_imgLogo" width="32px" src="../content/img/logo2.png" alt=""></li>
+                <li class="name_logo">Minh Shop</li>
+            </ul>
+        </div>
+
+        <div class="tieuDe">
+            <h1>Thêm danh mục</h1>
+        </div>
+
+        <button class="submit themmoi" style="margin-left: 35px;">Thêm Mới</button>
+
+        <div class="table">
+            <div class="thead">
+                <div class="tr">
+                    <div class="th" style="width: 100px;">Mã Loại</div>
+                    <div class="th" style="width: 700px;">Tên Loại</div>
+                    <div class="th" style="width: 300px;">Thao Tác</div>
+                </div>
+            </div>
+
+            <div class="tbody" id="tbody-user">
+                <!-- <div class="flex_tr">
+                    <div class="tr">
+                        <div class="th" style="width: 100px;">1</div>
+                        <div class="th" style="width: 700px;">Đồng Hồ</div>
+                        <div class="th" style="width: 300px;">
+                            <button class="bnt_list btn_edit"><a href="#">Sửa</a></button>
+                            <button class="bnt_list1"><a href="#">Xóa</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex_tr" >
+                    <div class="tr">
+                        <div class="th" style="width: 100px;">1</div>
+                        <div class="th" style="width: 700px;">Đồng Hồ</div>
+                        <div class="th" style="width: 300px;">
+                            <button class="bnt_list btn_edit"><a href="#">Sửa</a></button>
+                            <button class="bnt_list1 btn_delete"><a href="#">Xóa</a></button>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- js -->
+    <script src="/content/js/danhmuc.js"></script>
+    <script src="/content/js/API_danhmuc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{
+  "listSV": [
+    {
+      "name": "minh2",
+      "age": "78",
+      "major": "web",
+      "id": 1
+    },
+    {
+      "name": "huy",
+      "age": "78",
+      "major": "web",
+      "id": 2
+    },
+    {
+      "name": "huy",
+      "age": "12",
+      "major": "web",
+      "id": 3
+    },
+    {
+      "name": "kkakamfka",
+      "age": "12",
+      "major": "web",
+      "id": 4
+    },
+    {
+      "name": "kkakamfka",
+      "age": "12",
+      "major": "web",
+      "id": 5
+    },
+    {
+      "name": "kkakamfka",
+      "age": "12",
+      "major": "web",
+      "id": 6
+    }
+  ]
+}

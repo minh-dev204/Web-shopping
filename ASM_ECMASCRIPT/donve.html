@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shoppe</title>
+    <link rel="stylesheet" href="/content/css/index.css">
+    <link rel="stylesheet" href="/content/css/grid.css">
+    <link rel="stylesheet" href="/content/css/donVe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <div class="header_index">
+            <div class="content_header">
+                <div onclick="click_logo()" class="img_logo">
+                    <div class="div_logo">
+                        <img src="content/img/logo2.png" alt="">
+                    </div>
+                    <div class="name_logo">
+                        <a style="color: black;" href="index.html">Minh Shop | Đơn Mua</a>
+                    </div>
+                </div>
+
+                <!-- <div class="header_inp">
+                    <div class="ul_input">
+                        <ul class="header_ul_group ul_group_firt">
+                            <li class="li_inp"><input class="search" type="text" placeholder="Tìm Kiếm ..."></li>
+                            <li class="li_bnt"><button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="bart_tablet_mobile" onclick="bart_click ()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+
+                <div class="content_bart_tablet_mobile" id="content_bart_tablet_mobile">
+                    <div class="bart_thongtin">
+                        <ul class="ul_bart">
+                            <div class="bart_group">
+                                <div class="bart_profile_user">
+                                    <div class="bart_avatar">
+                                        <i class="fa-solid fa-user"></i>
+                                        <!-- <img src="content/img/bm.jpg" alt=""> -->
+                                    </div>
+                                    <div class="bart_name">Bùi Văn Minh</div>
+                                </div>
+                            </div>
+
+                            <div class="bart_group">
+                                <ul class="bart_ul_con">
+                                    <li class="bart_li"><a href="đăng_nhập.html"><i
+                                                class="fa-solid fa-arrow-right-to-bracket"></i> Đăng Nhập</a></li>
+                                    <li class="bart_li"><a href="đăng_ký.html"><i class="fa-solid fa-pen-to-square"></i>
+                                            Đăng
+                                            Ký</a></li>
+                                    <li class="bart_li"><a href="đơn_vé.html"><i class="fa-solid fa-ticket"></i> Vé Của
+                                            Tôi</a>
+                                    </li>
+                                    <li class="bart_li"><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                            Đăng
+                                            Xuất</a></li>
+                                    <li class="bart_li"><a href="/admin/danhmuc.html"><i class="fa-solid fa-user"></i>
+                                            Admin</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- thong tin đang nhập -->
+                <div class="header_info">
+                    <ul class="header_ul_group">
+                        <li class="li_avatar" onclick="onMouseover()">
+                            <!-- <i class="fa-solid fa-user fa-sm"></i> -->
+                            <img width="30px" height="30px"
+                                src="data:image/jpeg;base64,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"
+                                alt="">
+                        </li>
+                        <li class="name_avatar" onclick="onMouseover()"><span class="sessionName2">Bùi Văn Minh</span>
+                            <ul id="subnav_avatar">
+                                <div class="username_img_email">
+                                    <div class="sub_avatar">
+                                        <!-- <i class="fa-solid fa-user"></i> -->
+                                        <img width="50px" height="50px"
+                                            src="data:image/jpeg;base64,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"
+                                            alt="">
+                                    </div>
+                                    <div class="sub_group_email_ten">
+                                        <div class="sub_ten"><span class="sessionName">Bùi Văn Minh</span></div>
+                                        <div class="sub_email"><span class="sessionEmail">mbui683@gmail.com</span></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="thongTin_dn"><a href="đơn_vé.html">Đơn Mua</a></li>
+                                        <li onclick="clearSession()" class="thongTin_dn"><a href="">Đăng Xuất</a></li>
+                                        <li class="thongTin_dn"><a href="/admin/danhmuc.html">Admin</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <!-- phần dăng ký đăng nhập -->
+                        <li class="dn li_login"><a href="dangnhap.html">Đăng Nhập</a></li>
+                        <li class="dk li_login"><a href="dangky.html">Đăng Ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- article đơn vé -->
+        <div class="article_donVe">
+           <div class="article_donVe_children">
+            <div class="head_donve">
+                <div class="head_donveChild">
+                    <div class="head_oder head_oder1">Mã đơn</div>
+                    <div class="head_oder head_oder2">Sản phẩm</div>
+                    <div class="head_oder head_oder3">Giá tiền</div>
+                </div>
+            </div>
+
+            <div class="body_donve">
+                <div class="body_listDonVe" id="body_listDonVe"> 
+                    <!-- list -->
+                
+                    <!-- <div class="body_box">
+                        <div class="body_MainShop">
+                            <div class="body_shop">
+                                <div class="body_childShop">
+                                    <div class="yeuThich">Yêu thích+</div>
+                                    <div class="thoiTrang">Thời Trang MINH SHOP - NE...</div>
+                                    <div class="xemShop">Xem Shop</div>
+                                </div>
+                                <div class="body_childShop">
+                                    <div class="truck"><i class="fa-solid fa-truck-fast"></i></div>
+                                    <div class="trangThai">Đơn hàng đang được giao đến bạn.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body_box_top">
+                            <div class="box_top">
+                                <div class="box_id">1</div>
+                                <div class="box_img"><img width="80px" src="/content/img/sp8.jpg" alt=""></div>
+                                <div class="name_quantity">
+                                    <div class="box_name">Gấu Bông Màu Hương Dể Thương Oversize</div>
+                                    <div class="box_quantity"><span>x</span>1</div>
+                                </div>
+                                <div class="box_price">199<span>đ</span></div>
+                            </div>
+                           
+                        </div>
+                        <div class="body_box_bottom">
+                            <div class="box_bottom_top">
+                                <div class="tieuDeThanhTien">Thành Tiền:</div>
+                                <div class="box_bottom_top_Price">200đ</div>
+                            </div>
+                            <div class="box_bottom_bottom">
+                                <div class="ngayDathang">
+                                    <div class="ndh">Ngày đặt hàng: <span class="date">28-11-2024</span></div>
+                                </div>
+                                <div class="btnMuaLai">
+                                    <button>Mua Lại</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+                    <!--  -->
+            
+                    <!--  -->
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">chăm sóc khách hàng
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">trung tâm trợ giúp
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">mall
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">về Chúng tôi
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="https://www.facebook.com/baonhan.tran" class="footer-main__link">giới thiệu
+                                        về Trần
+                                        Bảo Nhân
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">tuyển dụng
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">điều khoản Shopee
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-0 c-0"></div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">theo dõi chúng tôi trên
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="https://www.facebook.com/baonhan.tran" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-facebook"></i>
+                                        facebook
+
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-instagram"></i>
+                                        instagram
+
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-linkedin"></i>
+                                        linkedIn
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <h4 class="footer-main__heading">vào cửa hàng trên ứng dụng tickid
+                            </h4>
+                            <div class="footer-main__download">
+                                <img src="content/img/qr.png" alt="QR code" class="footer-main__download-qr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-policy">
+                <ul class="footer-policy__nav no-margin-padding-list">
+                    <div class="grid wide">
+                        <div class="row footer-policy__wrapper">
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">chính sách bảo mật
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">quy chế hoạt động
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">chính sách vận chuyển
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link">chính sách trả hàng và hoàn tiền
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="footer-policy__legal">
+                    <a href="" class="footer-policy__legal-link">
+                        <div class="footer-policy__legal-img"></div>
+                    </a>
+                    <h4 class="footer-policy__legal-name">Công ty TNHH TICKID</h4>
+                </div>
+                <div class="footer-about">
+                    <p>Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, P. Ngọc Khánh, Q. Ba Đình, Tp.
+                        Hà Nội
+                    </p>
+                    <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i>
+                        2015 - Trang web được dựng bởi <a href="https://www.facebook.com/baonhan.tran">Trần Bảo Nhân</a>
+                        sau khóa học của F8
+
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- overlay -->
+        <div class="overlay_index">
+
+        </div>
+    </main>
+
+    <script src="/content/js/index.js"></script>
+    <script src="/content/js/donMua.js"></script>
+</body>
+
+</html>

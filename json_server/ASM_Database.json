@@ -1,0 +1,240 @@
+{
+  "danhMuc": [
+    {
+      "name": "Áo Sơ Mi Nam",
+      "id": 2
+    },
+    {
+      "name": "Quần Thun",
+      "id": 3
+    },
+    {
+      "name": "Áo Khoác",
+      "id": 4
+    },
+    {
+      "name": "Áo Thun",
+      "id": 5
+    }
+  ],
+  "sanPham": [
+    {
+      "id": "4",
+      "namesp": "Áo Sơ Mi Nam",
+      "price": "120",
+      "img": "sp9.jpg",
+      "mota": "Áo Chất Lượng Thun hàn",
+      "fkiddm": "2"
+    },
+    {
+      "id": "5",
+      "namesp": "Áo Thun Nam Oversize nam nữ",
+      "price": "219",
+      "img": "sp6.jpg",
+      "mota": "Sản Phẩm rất tuyệt vời",
+      "fkiddm": "5"
+    },
+    {
+      "id": "6",
+      "namesp": "Quần Thun Oversize nam nữ",
+      "price": "199",
+      "img": "sp1.jpg",
+      "mota": "Quần rất đẹp",
+      "fkiddm": "3"
+    },
+    {
+      "id": "7",
+      "namesp": "Áo khoác nữ nhung tăm đen ",
+      "price": "200",
+      "img": "sp3.jpg",
+      "mota": "Áo khoác nữ nhung tăm đen rất đẹp",
+      "fkiddm": "4"
+    },
+    {
+      "id": "8",
+      "namesp": "Áo Oversize nữ form babetee kem sữa dể mặc",
+      "price": "179",
+      "img": "sp8.jpg",
+      "mota": "Sản phẩm rất là tuyệt vời",
+      "fkiddm": "5"
+    },
+    {
+      "id": "9",
+      "namesp": "Áo thun nữ 2 dây 2 màu trắng đen dể mặc",
+      "price": "109",
+      "img": "sp2.jpg",
+      "mota": "Sản phẩm rất là tuyệt vời",
+      "fkiddm": "5"
+    },
+    {
+      "id": "10",
+      "namesp": "Áo cotton chất liệu pique nam nữ dể mặc",
+      "price": "169",
+      "img": "sp4.jpg",
+      "mota": "Sản phẩm rất là tuyệt vời",
+      "fkiddm": "5"
+    },
+    {
+      "id": "11",
+      "namesp": "Áo thun Oversize nam nữ form rộng nhiều màu",
+      "price": "149",
+      "img": "sp5.jpg",
+      "mota": "Sản phẩm rất là đẹp",
+      "fkiddm": "5"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_idkh": 1,
+      "created_date": "21-1-2024",
+      "products": [
+        {
+          "product_id": 1,
+          "quantity": 2,
+          "unit_price": 2000,
+          "product_name": "Quần ống suông nam form rộng nhung tăm dể mặc",
+          "product_img": "http://127.0.0.1:5500/content/img/sp1.jpg"
+        }
+      ]
+    },
+    {
+      "customer_idkh": 2,
+      "created_date": "30-4-2024",
+      "products": [
+        {
+          "product_id": "11",
+          "quantity": "1",
+          "unit_price": "149",
+          "product_img": "http://127.0.0.1:5500/content/img/sp5.jpg",
+          "product_name": "Áo thun Oversize nam nữ form rộng nhiều màu"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "customer_idkh": 2,
+      "created_date": "30-4-2024",
+      "products": [
+        {
+          "product_id": "5",
+          "quantity": "1",
+          "unit_price": "219",
+          "product_img": "http://127.0.0.1:5500/content/img/sp6.jpg",
+          "product_name": "Áo Thun Nam Oversize nam nữ"
+        },
+        {
+          "product_id": "7",
+          "quantity": "1",
+          "unit_price": "200",
+          "product_img": "http://127.0.0.1:5500/content/img/sp3.jpg",
+          "product_name": "Áo khoác nữ nhung tăm đen"
+        },
+        {
+          "product_id": "8",
+          "quantity": "1",
+          "unit_price": "179",
+          "product_img": "http://127.0.0.1:5500/content/img/sp8.jpg",
+          "product_name": "Áo Oversize nữ form babetee kem sữa dể mặc"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "customer_idkh": 2,
+      "created_date": "30-4-2024",
+      "products": [
+        {
+          "product_id": "8",
+          "quantity": "1",
+          "unit_price": "179",
+          "product_img": "http://127.0.0.1:5500/content/img/sp8.jpg",
+          "product_name": "Áo Oversize nữ form babetee kem sữa dể mặc"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "customer_idkh": 3,
+      "created_date": "30-4-2024",
+      "products": [
+        {
+          "product_id": "8",
+          "quantity": "1",
+          "unit_price": "179",
+          "product_img": "http://127.0.0.1:5500/content/img/sp8.jpg",
+          "product_name": "Áo Oversize nữ form babetee kem sữa dể mặc"
+        },
+        {
+          "product_id": "10",
+          "quantity": "1",
+          "unit_price": "169",
+          "product_img": "http://127.0.0.1:5500/content/img/sp4.jpg",
+          "product_name": "Áo cotton chất liệu pique nam nữ dể mặc"
+        },
+        {
+          "product_id": "11",
+          "quantity": "1",
+          "unit_price": "149",
+          "product_img": "http://127.0.0.1:5500/content/img/sp5.jpg",
+          "product_name": "Áo thun Oversize nam nữ form rộng nhiều màu"
+        },
+        {
+          "product_id": "7",
+          "quantity": "1",
+          "unit_price": "200",
+          "product_img": "http://127.0.0.1:5500/content/img/sp3.jpg",
+          "product_name": "Áo khoác nữ nhung tăm đen"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "customer_idkh": 2,
+      "created_date": "7-5-2024",
+      "products": [
+        {
+          "product_id": "10",
+          "quantity": "1",
+          "unit_price": "169",
+          "product_img": "http://127.0.0.1:5500/content/img/sp4.jpg",
+          "product_name": "Áo cotton chất liệu pique nam nữ dể mặc"
+        },
+        {
+          "product_id": "11",
+          "quantity": "1",
+          "unit_price": "149",
+          "product_img": "http://127.0.0.1:5500/content/img/sp5.jpg",
+          "product_name": "Áo thun Oversize nam nữ form rộng nhiều màu"
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "regsiter": [
+    {
+      "id": 1,
+      "name": "Bùi Minh",
+      "email": "mbui683@gmail.com",
+      "pass": 1,
+      "tel": "0935455107",
+      "address": "K748/19 Trần Thị Thạch"
+    },
+    {
+      "name": "Nguyễn Trần Thanh Xuân",
+      "email": "xuan683@gmail.com",
+      "pass": "1",
+      "tel": "0944102720",
+      "address": "k748/19 Lý Thái Tông",
+      "id": 2
+    },
+    {
+      "name": "chaubui",
+      "email": "chaubui@gmail.com",
+      "pass": "1",
+      "tel": "0935455107",
+      "address": "k748/19 Trần Cao Vân",
+      "id": 3
+    }
+  ]
+}

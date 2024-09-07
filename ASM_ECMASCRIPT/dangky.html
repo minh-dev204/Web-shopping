@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="content/css/index.css">
+    <link rel="stylesheet" href="content/css/cart.css">
+    <link rel="stylesheet" href="content/css/grid.css">
+    <link rel="stylesheet" href="content/css/auth.css">
+</head>
+
+<body>
+    <div class="main_index">
+        <!-- header -->
+        <div class="header_index">
+            <div class="content_header">
+                <div onclick="click_logo()" class="img_logo">
+                    <div class="div_logo">
+                        <img src="content/img/logo2.png" alt="">
+                    </div>
+                    <div class="name_logo">
+                        <a href="index.html">Minh Shop | Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="article_auth">
+            <div class="article_form">
+                <div class="main_form_userFlex">
+                    <div class="main_form_user">
+                        <div class="content_login_left">
+                            <div class="content_login">
+                                <h2>Minh Shop</h2>
+                                <p>Bạn đăng ký là đồng ý với điều khoản sử dụng của Minh Shop.</p>
+                            </div>
+                        </div>
+                        <div class="content_login_right">
+                            <div class="content_tieuDe_login">
+                                <h2>Đăng ký tài khoản</h2>
+                                <p>Điền thông tin đăng ký của bạn.</p>
+                            </div>
+                            <!--  -->
+                            <div class="form_user" id="form_userRegsiter">
+                                <div class="form_userflex ">
+                                    <div class="flexRegsiter">
+                                        <div class="form_group">
+                                            <label for="">Tên tài khoản</label>
+                                            <input type="text" placeholder="Tên tài khoản" name="nameRegister">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="">Địa chỉ Email</label>
+                                            <input type="text" placeholder="Email." name="emailRegister">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="">Mật khẩu</label>
+                                            <input type="password" placeholder="Password." name="passRegister">
+                                        </div>
+                                    </div>
+                                    <div class="flexRegsiter">
+                                        <div class="form_group">
+                                            <label for="">Số điện thoại</label>
+                                            <input type="tel" placeholder="tel." name="telRegister">
+                                        </div>
+                                        <div class="form_group">
+                                            <label for="">Địa chỉ</label>
+                                            <input type="text" placeholder="address." name="addressRegister">
+                                        </div>
+                                        <!-- <div class="form_group">
+                                            <label for="">Avatar</label>
+                                            <label id="labelAvatar" for="fileInput">Avatar</label>
+                                            <input type="file" id="fileInput" placeholder="avatar." name="avatarRegister">
+                                        </div> -->
+
+                                       
+
+                                    </div>
+                                </div>
+                                <input class="inp_form btn_register" type="submit" value="Đăng ký">
+                                <div class="wrap">
+                                    <p>Bạn đã có tài khoản?.<a href="dangnhap.html">Đăng nhập ngay</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">chăm sóc khách hàng
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">trung tâm trợ giúp
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">mall
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">về Chúng tôi
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="https://www.facebook.com/baonhan.tran" class="footer-main__link">giới thiệu
+                                        về Trần
+                                        Bảo Nhân
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">tuyển dụng
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">điều khoản Shopee
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-0 c-0"></div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">theo dõi chúng tôi trên
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="https://www.facebook.com/baonhan.tran" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-facebook"></i>
+                                        facebook
+
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-instagram"></i>
+                                        instagram
+
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-linkedin"></i>
+                                        linkedIn
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <h4 class="footer-main__heading">vào cửa hàng trên ứng dụng tickid
+                            </h4>
+                            <div class="footer-main__download">
+                                <img src="content/img/qr.png" alt="QR code" class="footer-main__download-qr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-policy">
+                <ul class="footer-policy__nav no-margin-padding-list">
+                    <div class="grid wide">
+                        <div class="row footer-policy__wrapper">
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">chính sách bảo mật
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">quy chế hoạt động
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">chính sách vận chuyển
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link">chính sách trả hàng và hoàn tiền
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="footer-policy__legal">
+                    <a href="http://online.gov.vn/Home/WebDetails/18367" class="footer-policy__legal-link">
+                        <div class="footer-policy__legal-img"></div>
+                    </a>
+                    <h4 class="footer-policy__legal-name">Công ty TNHH TICKID</h4>
+                </div>
+                <div class="footer-about">
+                    <p>Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, P. Ngọc Khánh, Q. Ba Đình, Tp.
+                        Hà Nội
+                    </p>
+                    <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i>
+                        2015 - Trang web được dựng bởi <a href="https://www.facebook.com/baonhan.tran">Trần Bảo Nhân</a>
+                        sau khóa học của F8
+
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+<script src="/content/js/index.js"></script>
+<script src="/content/js/cart2.js"></script>
+<script src="/content/js/bill.js"></script>
+<script src="/content/js_auth/regsiter.js"></script>
+
+</html>

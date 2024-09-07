@@ -1,0 +1,212 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.article_donVe {
+    margin-top: 66px;
+    min-height: 300px;
+}
+
+.article_donVe_children {
+    max-width: 1000px;
+    margin: auto;
+    /* background-color: tomato; */
+    min-height: 100px;
+    margin-top: 100px;
+}
+
+.head_donve {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
+    z-index: 9999;
+    height: 40px;
+    /* border: 1px solid black; */
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(51, 51, 51, 0.05), 0 30px 20px -20px rgba(51, 51, 51, 0.25), 0 4px 20px 0 rgba(51, 51, 51, 0.2);
+}
+
+.head_donveChild {
+    display: flex;
+    /* width: 100%; */
+}
+
+.head_oder {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.head_oder1 {
+    width: 7%;
+}
+
+.head_oder2 {
+    width: 78%;
+}
+
+.head_oder3 {
+    width: 15%;
+    text-align: center;
+}
+
+/* body box */
+
+.body_donve {
+    margin-top: 20px;
+}
+
+.body_box {
+    /* border: 1px solid black; */
+    min-height: 100px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 0 1px rgba(51, 51, 51, 0.05), 0 30px 20px -20px rgba(51, 51, 51, 0.25), 0 4px 20px 0 rgba(51, 51, 51, 0.2);
+}
+
+.body_MainShop {
+    /* background-color: tomato; */
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.body_shop {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_childShop {
+    display: flex;
+    font-size: 0.85rem;
+}
+
+.body_childShop .yeuThich {
+    background-color: #d73211;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 4px;
+}
+
+.body_childShop .thoiTrang {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.body_childShop .xemShop {
+    cursor: pointer;
+    background-color: #d73211;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    padding: 2px 4px;
+    margin-left: 10px;
+}
+
+.body_childShop .truck {
+    color: #53a899;
+}
+
+.body_childShop .trangThai {
+    color: #53a899;
+    margin-left: 10px;
+}
+ 
+.body_box_top {
+    min-height: 100px;
+
+}
+
+.body_box_top .box_top {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.box_top .box_id {
+    width: 7%;
+    text-align: center;
+}
+
+.box_top .box_img {
+    width: 10%;
+}
+
+.box_img img {
+    border-radius: 3px;
+}
+
+.box_top .name_quantity {
+    /* display: flex; */
+    width: 68%;
+    margin-top: 7px;
+    align-self: flex-start;
+}
+
+.name_quantity .box_quantity {
+    color: tomato;
+}
+
+.box_top .box_price {
+    width: 15%;
+    text-align: center;
+    color: tomato;
+}
+
+
+/*  */
+.body_box_bottom {
+    height: 120px;
+}
+
+.tieuDeThanhTien {
+    font-size: 0.95rem;
+}
+
+.box_bottom_top {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.box_bottom_top_Price {
+    font-size: 1.5rem;
+    color: tomato;
+}
+
+
+.box_bottom_bottom {
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 65px;
+
+}
+
+.btnMuaLai {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.btnMuaLai button {
+    background-color: #d73211;
+    color: white;
+    padding: 12px 35px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.ngayDathang .date {
+    margin-left: 5px;
+    color: #53a899;
+    font-size: 0.9rem;
+}

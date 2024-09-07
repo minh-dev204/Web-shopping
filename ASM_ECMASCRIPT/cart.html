@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="content/css/index.css">
+    <link rel="stylesheet" href="content/css/cart.css">
+    <link rel="stylesheet" href="content/css/grid.css">
+</head>
+
+<body>
+    <div class="main_index">
+        <!-- header -->
+        <div class="header_index">
+            <div class="content_header">
+                <div onclick="click_logo()" class="img_logo">
+                    <div class="div_logo">
+                        <img src="content/img/logo2.png" alt="">
+                    </div>
+                    <div class="name_logo">
+                        <a href="index.html">Minh Shop | Giỏ Hàng</a>
+                    </div>
+                </div>
+
+                <div class="header_inp">
+                    <div class="ul_input">
+                        <ul class="header_ul_group ul_group_firt">
+                            <li class="li_inp"><input type="text" placeholder="Tìm Kiếm ..."></li>
+                            <li class="li_bnt"><button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bart_tablet_mobile" onclick="bart_click ()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+
+                <div class="content_bart_tablet_mobile" id="content_bart_tablet_mobile">
+                    <div class="bart_thongtin">
+                        <ul class="ul_bart">
+                            <div class="bart_group">
+                                <div class="bart_profile_user">
+                                    <div class="bart_avatar">
+                                        <img src="content/img/bm.jpg" alt="">
+                                    </div>
+                                    <div class="bart_name">Bùi Văn Minh</div>
+                                </div>
+                            </div>
+
+                            <div class="bart_group">
+                                <ul class="bart_ul_con">
+                                    <li class="bart_li"><a href="#">Vé Của Tôi</a></li>
+                                    <li class="bart_li"><a href="#">Đăng Xuất</a></li>
+                                    <li class="bart_li"><a href="#">Admin</a></li>
+                                    <li onclick="moon_sun()" class="bart_li"><a href="#">Sáng Tối</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="header_info">
+                    <ul class="header_ul_group">
+                        <li class="li_avatar" onclick="onMouseover()"><img width="30px" height="30px"
+                                src="content/img/bm.jpg" alt="">
+                        </li>
+                        <li class="name_avatar" onclick="onMouseover()"><span class="sessionName2">Bui Van Minh</span>
+                            <ul id="subnav_avatar">
+                                <div class="username_img_email">
+                                    <div class="sub_avatar">
+                                        <img width="50px" height="50px" src="content/img/bm.jpg" alt="">
+                                    </div>
+                                    <div class="sub_group_email_ten">
+                                        <div class="sub_ten"><span class="sessionName">Bùi Văn Minh</span></div>
+                                        <div class="sub_email"><span class="sessionEmail">mbui683@gmail.com</span></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="thongTin_dn"><a href="donve.html">Đơn Mua</a></li>
+                                        <li onclick="clearSession()" class="thongTin_dn"><a href="">Đăng Xuất</a></li>
+                                        <li class="thongTin_dn"><a href="/admin/danhmuc.html">Admin</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dn li_login"><a href="đăng_nhập.html">Đăng Nhập</a></li>
+                                    <li class="dk li_login"><a href="đăng_ký.html">Đăng Ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="article_cart">
+            <!-- right -->
+            <div class="art_cart_right">
+                <h2 class="h4_cart">Giỏ Hàng Của Bạn</h2>
+                <div class="content_cart">
+                    <div class="head_cart">
+                        <div class="C1">STT</div>
+                        <div class="C2">Sản Phẩm</div>
+                        <div class="C3"></div>
+                        <div class="C4">Đơn Giá</div>
+                        <div class="C5">Thao Tác</div>
+                    </div>
+
+                    <div id="main_messager">
+                        <div id="thongBao_imageCart">
+                            <img src="content/img/cart_trong.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="body_cart">
+
+                        <!-- <div class="item_body_cart">
+                            <div class="BC1"><input type="checkbox" name="" id=""></div>
+                            <div class="BC2"><img width="80px"
+                                    src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbm3-lmssx4is7j95a6_tn"
+                                    alt=""></div>
+                            <div class="BC3">Áo Thun Nam Nữ Oversize màu trắng</div>
+                            <div class="BC4">170.000</div>
+                            <div class="BC5">
+                                <button class="bnt_del_cart">Xóa</button>
+                            </div>
+                        </div>
+
+                        <div class="item_body_cart">
+                            <div class="BC1">#</div>
+                            <div class="BC2"><img width="80px"
+                                    src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbm3-lmssx4is7j95a6_tn"
+                                    alt=""></div>
+                            <div class="BC3">Áo Thun Nam Nữ Oversize màu trắng</div>
+                            <div class="BC4">170.000</div>
+                            <div class="BC5">
+                                <button class="bnt_del_cart">Xóa</button>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="listTT">
+                    <div class="t1"><input type="checkbox"></div>
+                    <div class="t2">Chọn Tất Cả(<span id="count">0</span>)</div>
+                    <div class="t3">Tổng Thanh Toán :<span class="tongtien">0</span>đ</div>
+                    <div class="t4"><button class="t4_muaNgay">Mua Hàng</button></div>
+                    <!-- <div class="t4"><button class="t4_muaNgay">Mua Hàng</button></div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">chăm sóc khách hàng
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">trung tâm trợ giúp
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">mall
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">về Chúng tôi
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="https://www.facebook.com/baonhan.tran" class="footer-main__link">giới thiệu
+                                        về Trần
+                                        Bảo Nhân
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">tuyển dụng
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">điều khoản Shopee
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-0 c-0"></div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <ul class="no-margin-padding-list footer-main__list">
+                                <h4 class="footer-main__heading">theo dõi chúng tôi trên
+                                </h4>
+                                <li class="footer-main__item">
+                                    <a href="https://www.facebook.com/baonhan.tran" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-facebook"></i>
+                                        facebook
+
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-instagram"></i>
+                                        instagram
+
+                                    </a>
+                                </li>
+                                <li class="footer-main__item">
+                                    <a href="#" class="footer-main__link">
+                                        <i class="footer-main__item-icon fa-brands fa-linkedin"></i>
+                                        linkedIn
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-6 c-6">
+                            <h4 class="footer-main__heading">vào cửa hàng trên ứng dụng tickid
+                            </h4>
+                            <div class="footer-main__download">
+                                <img src="content/img/qr.png" alt="QR code" class="footer-main__download-qr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-policy">
+                <ul class="footer-policy__nav no-margin-padding-list">
+                    <div class="grid wide">
+                        <div class="row footer-policy__wrapper">
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">chính sách bảo mật
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">quy chế hoạt động
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link item--separate">chính sách vận chuyển
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <li class="footer-policy__item">
+                                    <a href="" class="footer-policy__link">chính sách trả hàng và hoàn tiền
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="footer-policy__legal">
+                    <a href="http://online.gov.vn/Home/WebDetails/18367" class="footer-policy__legal-link">
+                        <div class="footer-policy__legal-img"></div>
+                    </a>
+                    <h4 class="footer-policy__legal-name">Công ty TNHH TICKID</h4>
+                </div>
+                <div class="footer-about">
+                    <p>Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, P. Ngọc Khánh, Q. Ba Đình, Tp.
+                        Hà Nội
+                    </p>
+                    <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                    <p>
+                        <i class="fa-regular fa-copyright"></i>
+                        2015 - Trang web được dựng bởi <a href="https://www.facebook.com/baonhan.tran">Trần Bảo Nhân</a>
+                        sau khóa học của F8
+
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+<script src="/content/js/index.js"></script>
+<script src="/content/js/cart2.js"></script>
+<script src="/content/js/bill.js"></script>
+<script src="content/js_auth/login.js"></script>
+
+</html>

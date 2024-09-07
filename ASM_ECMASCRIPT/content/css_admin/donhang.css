@@ -1,0 +1,8 @@
+.tr_donhang {
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    min-height: 45px;
+    border-radius: 4px;
+}

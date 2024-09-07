@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/content/css_admin/danhmuc.css">
+    <link rel="stylesheet" href="/content/css_admin/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <article>
+        <div class="box_left">
+            <div class="box_left_h1">
+                <h1>Admin</h1>
+            </div>
+            <ul class="ul_left">
+                <div class="div_li" id="li1">
+                    <li class="li_left"><a href="danhmuc.html">DANH MỤC</a></li>
+                </div>
+                <div class="div_li">
+                    <li class="li_left"><a href="sanpham.html">SẢN PHẨM</a></li>
+                </div>
+                <div class="div_li">
+                    <li class="li_left"><a href="donhang.html">Đơn Hàng</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="setting" onclick="outAdmin()">
+            <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+        </div>
+    </article>
+    <!-- aside -->
+    <aside>
+        <!--  form create  -->
+        <div class="form_create_sp">
+            <div class="form_group ">
+                <label class="group_label">Mã Sản Phẩm :</label>
+                <input class="group_inp" type="number" name="form-idsp">
+            </div>
+            <div class="form_group ">
+                <label class="group_label" for="">Tên Sản Phẩm :</label>
+                <input class="group_inp" type="text" name="form-namesp">
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label" for="">Giá :</label>
+                <input class="group_inp" type="text" name="form-price">
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label" for="">Hình :</label>
+                <input class="group_inp" type="file" name="form-img">
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label" for="">Mô Tả :</label>
+                <textarea name="form-mota" id="" cols="10" rows="5"></textarea>
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label">Mã Loại :</label>
+                <select class="group_inp select_option_create">
+                    <option class="group_inp option" value="1">Áo</option>
+                    <option class="group_inp option" value="2">Quần</option>
+                </select>
+            </div>
+
+            <button id="bnt-create_sp" class="submit create create_danhmuc">Create</button>
+        </div>
+        <!-- end form create -->
+
+        <!--  form update  -->
+        <div class="form_update_sp">
+            <div class="form_group ">
+                <label class="group_label" for="">Mã Sản Phẩm :</label>
+                <input class="group_inp" name="form-idsp-update" type="number">
+            </div>
+            <div class="form_group ">
+                <label class="group_label" for="">Tên Sản Phẩm :</label>
+                <input class="group_inp" name="form-namesp-update" type="text">
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label" for="">Giá :</label>
+                <input class="group_inp" name="form-price-update" type="text">
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label" for="">Hình :</label>
+                <input class="group_inp" name="form-img-update" type="file">
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label" for="">Mô Tả :</label>
+                <textarea name="form-mota-update" id="" cols="10" rows="5"></textarea>
+            </div>
+
+            <div class="form_group ">
+                <label class="group_label">Mã Loại :</label>
+                <select class="group_inp select_option_update">
+                    <option class="group_inp" value="">Áo</option>
+                </select>
+            </div>
+
+            <button class="submit update" id="bnt_update_sp">Update</button>
+        </div>
+        <!-- end form update -->
+
+
+        <div class="logo">
+            <ul class="ul_logo">
+                <!-- <li class="i"><i class="fa-solid fa-bag-shopping fa-2xl"></i></li> -->
+                <li class="li_logo_first"><img class="li_imgLogo" width="32px" src="../content/img/logo2.png" alt="">
+                </li>
+                <li class="name_logo">Minh Shop</li>
+            </ul>
+        </div>
+
+        <div class="tieuDe">
+            <h1>Thêm sản phẩm</h1>
+        </div>
+
+        <button class="submit themmoi_sp" style="margin-left: 35px;">Thêm Mới</button>
+
+
+        <div class="table_sp">
+            <div class="thead_sp">
+                <div class="tr">
+                    <div class="th" style="width: 100px;">Mã loại</div>
+                    <div class="th" style="width: 300px;">Tên loại</div>
+                    <div class="th" style="width: 200px;">Hình</div>
+                    <div class="th" style="width: 100px;">Giá</div>
+                    <div class="th" style="width: 100px;">Loại hàng</div>
+                    <div class="th" style="width: 300px;">Thao tác</div>
+                </div>
+            </div>
+
+            <div id="tbody_sp" class="tbody_sp">
+                <div class="tr_sp">
+                    <div class="td" style="width: 100px;">1</div>
+                    <div class="td" style="width: 300px;">Đồng hồ</div>
+                    <div class="td" style="width: 300px;"><img width="70px" src="../content/img/sp1.jpg" alt=""></div>
+                    <div class="td" style="width: 100px;">100$</div>
+                    <div class="td" style="width: 300px;">
+                        <button onclick="editSanPham()" class="bnt_list"><a href="#">Sửa</a></button>
+                        <button class="bnt_list1"><a href="#">Xóa</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+
+    <!-- js -->
+    <!-- <script src="../content/js/danhmuc.js"></script> -->
+    <script src="../content/js/sanpham.js"></script>
+    <script src="../content/js/API_sanpham.js"></script>
+    <script src="../content/js/danhmuc.js"></script>
+</body>
+
+</html>

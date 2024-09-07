@@ -1,0 +1,289 @@
+.overlay_index {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(00, 00, 00, 0.5);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.main_chitietSP {
+    position: fixed;
+    display: none;
+    z-index: 999999;
+    left: 156.400px;
+    top: -66px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.chitetSP {
+    background-color: #ffffff;
+    width: 1200px;
+    min-height: 495px;
+    margin: auto;
+    margin-top: 180px;
+    border-radius: 5px;
+    display: flex;
+}
+
+/* .anh_chitiet img {
+    width: 450px;
+    height: 445px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.thongTin_SP h1 {
+    margin-left: 10px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.thongTin_SP .flex_bnt {
+    margin-left: 6px;
+}
+
+.thongTin_SP .flex_bnt button {
+    background-color: initial;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+}
+
+.thongTin_SP .flex_bnt {
+    display: flex;
+}
+
+.thongTin_SP .flex_bnt button .bnt_item1 {
+    font-size: 1rem;
+    color: #222;
+    margin-right: 5px;
+    padding-bottom: 1px;
+}
+
+.thongTin_SP .flex_bnt button .bnt_item2 {
+    /* padding: 2px 0; */
+    margin-right: 5px;
+    font-size: .875rem;
+    color: #767676;
+    text-transform: capitalize;
+}
+
+.bnt_item2 i {
+    color: tomato;
+}
+
+.thongTin_SP_tablet {
+    display: none;
+}
+
+.khung {
+    width: 96%;
+    height: 43px;
+    margin-left: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+.khung h3 {
+    line-height: 43px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.Gia {
+    /* display: inline-block; */
+    display: flex;
+}
+
+.Gia .price_SP {
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    color: tomato;
+}
+
+._0voski {
+    width: 80px;
+    height: 15px;
+    margin-left: 15px;
+    font-size: .75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background: #ee4d2d;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 11px 0px 11px 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.thongTin_chitiet {
+    margin-left: 10px;
+}
+
+.thongTin_chitiet p {
+    font-size: 1rem;
+    line-height: 15px;
+}
+
+.thongTin_chitiet #mota_SP {
+    min-height: 50px;
+}
+
+.inp input {
+    width: 30px;
+    border-radius: 4px;
+}
+
+.nut {
+    margin-top: 108px;
+}
+
+#i_icon {
+    margin-right: 5px;
+}
+
+.nut button {
+    height: 35px;
+    background-color: tomato;
+    border-radius: 4px;
+    color: white;
+}
+
+.anh_chitiet {
+    flex: 0.8;
+}
+
+.thongTin_SP {
+    flex: 1.2;
+}
+
+.closeNow {
+    cursor: pointer;
+}
+/* reponsive */
+/* PC : width >= 1024px */
+@media screen and (min-width: 64em) {
+    .anh_chitiet img {
+        width: 450px;
+        height: 445px;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+/* tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.938em) {
+    .chitetSP {
+        flex-direction: column;
+        margin-top: 154px;
+    }
+
+    .chitetSP .anh_chitiet {
+        text-align: center;
+        width: 100%;
+    }
+
+    .chitetSP .anh_chitiet img {
+        margin-left: 0px;
+    }
+
+    .thongTin_SP_tablet {
+        display: block;
+    }
+
+    .thongTin_SP_tablet h1 {
+        margin-left: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .thongTin_SP h1 {
+        display: none;
+    }
+
+
+    /* list sản phẩm */
+    .box_sp {
+        flex-wrap: wrap;
+    }
+
+    .box_sp .box {
+        justify-content: center;
+    }
+
+    /* bình luận */
+    .form {
+        margin-left: 9px;
+    }
+
+    .profile_user .BL {
+        max-width: 548px;
+    }
+}
+
+/* mobile : width < 740px   */
+@media screen and (max-width: 46.188em) {
+    .chitetSP {
+        flex-direction: column;
+        margin-top: 87px;
+    }
+
+    .chitetSP .anh_chitiet {
+        text-align: center;
+        width: 400px;
+        height: 320px;
+    }
+
+    .chitetSP .anh_chitiet img {
+        margin-left: 0px;
+    }
+
+    .chitetSP .thongTin_SP_tablet {
+        display: block;
+    }
+
+    .thongTin_SP_tablet h1 {
+        margin-left: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .thongTin_SP h1 {
+        display: none;
+    }
+
+    .chitetSP .flex_bnt {
+        display: none;
+    }
+
+    .content_SP {
+        margin-top: 86px;
+    }
+
+    .khung {
+        width: 93%;
+    }
+
+    /* bình luận */
+    .form {
+        margin-left: 9px;
+    }
+}
